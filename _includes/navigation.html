@@ -1,0 +1,11 @@
+<nav>
+    <div class="allButtons">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="button" id = "{{ item.link }}"" {% if page.url == item.link %}{% endif %}>
+        <font size="1">
+            {{ item.name }}
+        </font>
+    </a>
+    {% endfor %}
+    </div>
+</nav>

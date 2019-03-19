@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Services
+  link: /services.html
+- name: Death announcements
+  link: /deathAnnouncements.html
+- name: Contact us
+  link: /contact.html

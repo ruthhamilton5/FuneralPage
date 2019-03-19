@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jim Mcrea</title>
+        <link rel="stylesheet" href="/assets/css/styling.css">
+    </head>
+    <body onload="highlightButton()">
+        <div class = "container">
+            <div class="webContent">
+                <div class="PageHeader">
+                    <img src="/assets/images/HamiltonHomeImage.jpg" id="sky">
+                    <h1 class="pageTitle" align="center">Hamilton's Funeral Services</h1>
+                </div>
+            <nav>
+    <div class="allButtons">
+    
+    <a href="/" class="button" id = "/"" >
+        <font size="1">
+            Home
+        </font>
+    </a>
+    
+    <a href="/services.html" class="button" id = "/services.html"" >
+        <font size="1">
+            Services
+        </font>
+    </a>
+    
+    <a href="/deathAnnouncements.html" class="button" id = "/deathAnnouncements.html"" >
+        <font size="1">
+            Death announcements
+        </font>
+    </a>
+    
+    <a href="/contact.html" class="button" id = "/contact.html"" >
+        <font size="1">
+            Contact us
+        </font>
+    </a>
+    
+    </div>
+</nav>
+            <h1>Jim Mcrea</h1>
+<p>19 Oct 2018 - Ed</p>
+
+<p>Jim Mcrea lived a fantastic life. Born in Belfast he was a keen footballer in his youth. They called him the “wee rocket”.</p>
+
+            </div>
+
+        <script>
+                function highlightButton() {
+                    var pathname = window.location.pathname;
+                    console.log(pathname);
+                    var  elem = document.getElementById(pathname);
+                    console.log(elem);
+                    if(elem !== null) {
+                        elem.setAttribute("class", "buttonSelected");
+                    }
+                }
+            </script>
+    </body>
+</html>

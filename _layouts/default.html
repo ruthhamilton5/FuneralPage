@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styling.css">
+    </head>
+    <body onload="highlightButton()">
+        <div class = "container">
+            <div class="webContent">
+                <div class="PageHeader">
+                    <img src="/assets/images/HamiltonHomeImage.jpg" id="sky">
+                    <h1 class="pageTitle" align="center">Hamilton's Funeral Services</h1>
+                </div>
+            {% include navigation.html %}
+            {{ content }}
+            </div>
+
+        <script>
+                function highlightButton() {
+                    var pathname = window.location.pathname;
+                    console.log(pathname);
+                    var  elem = document.getElementById(pathname);
+                    console.log(elem);
+                    if(elem !== null) {
+                        elem.setAttribute("class", "buttonSelected");
+                    }
+                }
+            </script>
+    </body>
+</html>

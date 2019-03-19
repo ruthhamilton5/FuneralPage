@@ -1,0 +1,22 @@
+---
+layout: default
+title: Death announcements
+---
+<link rel="stylesheet" href="/assets/css/deathNotices.css">
+<h1 align="center">Death announcements</h1>
+
+<ul style="list-style: none;" class="noticeList">
+  {% for post in site.posts %}
+  {% assign nowTimestamp = 'now' | date: '%s' %}
+  {% assign postTimestamp = post.date | date: '%s' %}
+  {% assign diff_seconds = nowTimestamp | minus: postTimestamp %}
+  {% assign diff_days = diff_seconds | divided_by: 3600 | divided_by: 24 %}
+  {% if diff_days < 30 %}
+        <li>
+        <h2 class="name">{{ post.title }}</h2>
+        {{ post.content }}
+        </li>
+  {% endif %}
+  {% endfor %}
+  <a href="https://www.funeraltimes.com/" id="funeraltimes">View all death notices</a>
+</ul>

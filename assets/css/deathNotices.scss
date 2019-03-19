@@ -1,0 +1,40 @@
+---
+---
+@import "main";
+
+p {
+   padding-bottom: 15px;
+   border-bottom: 1px solid black;
+   margin-bottom: 0px;
+}
+
+.name {
+    padding-top: 15px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+.noticeList {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#funeraltimes {
+    margin-top: 10px;
+    position: relative;
+    left: 50%;
+    margin-left: -149px;
+    display: inline-block;
+    width: 30%;
+    height: 25px;
+    background: grey;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#funeraltimes:hover {
+    border: 1px solid black;
+}
